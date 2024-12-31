@@ -1,0 +1,264 @@
+/* Common css starts here */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.alnc{
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: #cfc91d;
+    color: black;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 19px 43px;
+    display: inline-block;
+    border: none;
+}
+.heading h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 16px;
+    color: #7e8287;
+}
+/* Common css ends here */
+
+/* nav starts here */
+nav{
+    background-color: #02918c;
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25.5px;
+    display: inline-block;
+}
+
+/* nav ends here */
+/* banner starts here */
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-color: rgba(0, 0, 0, 0.34) ;
+    width: 100%;
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+}
+.banner-content{
+    text-align: center;
+    color: white;
+}
+.banner-content h4{
+    font-weight: 400;
+    font-size: 30px;
+}
+.banner-content h1{
+    font-weight: 800;
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.banner-content p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.banner-content img {
+    margin: 52px 0;
+}
+
+/* banner ends here */
+/* about starts here */
+#about{
+    padding: 98px 0;
+}
+#about .heading {
+    text-align: center;
+}
+#about .heading p {
+    margin-top: 35px;
+}
+.txt p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+.txt .boldtxt{
+    font-weight: 800;
+    font-size: 23px;
+}
+.about_card{
+    width: 25%;
+    text-align: center;
+    border-right: solid 1px #7e8287;
+}
+.about_card:last-child{
+    border: none;
+}
+
+.about_card span{
+    font-size: 38px;
+    color: #02918c;
+}
+.about_card h4 {
+    font-weight: 800;
+    font-size: 16px;
+    padding: 29px 0;
+    color: #7e8287;
+}
+.about_card p {
+    font-weight: 400;
+    font-size: 11px;
+    color: #7e8287;
+}
+
+/* about ends here */
+/* services css starts here */
+#services{
+    background-image: url(../images/MYFOLIO.jpg);
+    width: 100%;
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#services .container{
+    width: 50%;
+    margin-left: 0;
+}
+#services .container .heading{
+    padding: 74px 93px;
+    text-align: left;
+}
+.service_card{
+    width: 50%;
+    text-align: left;
+    padding-left: 93px;
+    padding-bottom: 50px;
+}
+.service_card span{
+    font-size: 38px;
+    color: #02918c;
+}
+.service_card h4 {
+    font-weight: 800;
+    font-size: 16px;
+    padding: 23px 0;
+    color: #7e8287;
+}
+.service_card p {
+    font-weight: 400;
+    font-size: 11px;
+    color: #7e8287;
+}
+/* services css ends here */
+/* work starts here */
+#work {
+    padding: 111px 0;
+}
+#work .heading {
+    text-align: center;
+    padding-bottom: 82px;
+}
+
+#work .work_card{
+    width: 25%;
+    position: relative;
+}
+#work .work_card img{
+    width: 100%;
+    display: block;
+}
+.work_card .overlay{
+    position: absolute;
+    background-color: rgba(2, 145, 140, 0.85);
+    inset: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 99px;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+}
+.work_card:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+.work_card .overlay h3{
+    font-weight: 800;
+}
+/* work ends here */
+/* contact starts here */
+#contact{
+    padding: 72px 0;
+    background-color: #0b0b0b;
+    text-align: center;
+}
+#contact-head .heading {
+    text-align: center;
+    padding-bottom: 75px;
+
+}
+#contact input{
+    width: 640px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    padding: 10px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+/* contact ends here */
+/* copywrite starts here */
+#copywrite{
+    padding: 35px 0;
+    display: block;
+    background-color: black;
+    text-align: center;
+    color: #7e8287;
+}
+/* copy write ends here */
